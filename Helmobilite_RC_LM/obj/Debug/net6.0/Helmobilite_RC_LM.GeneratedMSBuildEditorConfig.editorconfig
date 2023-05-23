@@ -5,201 +5,220 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Helmobilite_RC_LM
 build_property.RootNamespace = Helmobilite_RC_LM
-build_property.ProjectDir = C:\Users\lolot\RiderProjects\Helmobilite_RC_LM\Helmobilite_RC_LM\
+build_property.ProjectDir = C:\Users\Romai\Desktop\2022-2023\B2\Q2\DevWeb\pf\Helmobilite_RC_LM\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lolot\RiderProjects\Helmobilite_RC_LM\Helmobilite_RC_LM
+build_property.MSBuildProjectDirectory = C:\Users\Romai\Desktop\2022-2023\B2\Q2\DevWeb\pf\Helmobilite_RC_LM
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Lockout.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Camion/Create.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Camion/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtaW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Camion/Delete.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Camion/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtaW9uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Camion/Details.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Camion/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtaW9uXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Camion/Edit.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Camion/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtaW9uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Camion/Index.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Camion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtaW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Home/Index.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Home/Privacy.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Livraisons/Create.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Livraisons/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmFpc29uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Livraisons/Delete.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Livraisons/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmFpc29uc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Livraisons/Details.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Livraisons/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmFpc29uc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Livraisons/Edit.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Livraisons/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmFpc29uc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Livraisons/Index.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Livraisons/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmFpc29uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Shared/Error.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/OrdreLivraisons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkcmVMaXZyYWlzb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/OrdreLivraisons/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkcmVMaXZyYWlzb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/OrdreLivraisons/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkcmVMaXZyYWlzb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/OrdreLivraisons/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkcmVMaXZyYWlzb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/OrdreLivraisons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkcmVMaXZyYWlzb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/_ViewImports.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/_ViewStart.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lolot/RiderProjects/Helmobilite_RC_LM/Helmobilite_RC_LM/Views/Shared/_Layout.cshtml]
+[C:/Users/Romai/Desktop/2022-2023/B2/Q2/DevWeb/pf/Helmobilite_RC_LM/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3a6gsqlph2

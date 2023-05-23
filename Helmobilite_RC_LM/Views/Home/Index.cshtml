@@ -25,7 +25,7 @@
         @foreach (var imageFile in Directory.EnumerateFiles("wwwroot/images/teams"))
         {
             <div class="col-md-4">
-                <img src="@imageFile" class="img-fluid" alt="Équipe">
+                <img src="~/images/teams/@imageFile[imageFile.IndexOf('\\')..]" class="img-fluid" alt="Team" style="height: 150px; width: auto">
             </div>
         }
     </div>
@@ -37,7 +37,7 @@
         @foreach (var imageFile in Directory.EnumerateFiles("wwwroot/images/client"))
         {
             <div class="col-md-4">
-                <img src="@imageFile" class="img-fluid" alt="Partenaire">
+                <img src="~/images/client/@imageFile[imageFile.IndexOf('\\')..]" class="img-fluid" alt="Partenaire" style="height: 150px; width: auto">
             </div>
         }
     </div>

@@ -20,10 +20,4 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\images\camions\" />
-    <Folder Include="wwwroot\images\client\" />
-    <Folder Include="wwwroot\images\teams\" />
-  </ItemGroup>
-
 </Project>
