@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to HELMo-bilité</h1>
+    <p>Découvrez notre branche spécialisée dans le transport routier. Notre équipe dévouée, notre flotte moderne et notre expertise reconnue sont prêtes à répondre à vos besoins.</p>
+</div>
+<div class="container">
+    <h2 class="text-center">Nos camions</h2>
+    <div class="row">
+        <!-- Affiche les images contenues dans le dossier images/camions -->
+        @foreach (var imageFile in Directory.EnumerateFiles("wwwroot/images/camions"))
+        {
+            <div class="col-md-4">
+                <img src="~/images/camions/@imageFile[imageFile.IndexOf('\\')..]" class="img-fluid" alt="Camion" style="height: 150px; width: auto" >
+            </div>
+        }
+    </div>
+</div>
+<div class="container">
+    <h2 class="text-center">Notre équipe</h2>
+    <div class="row">
+        <!-- Affiche les images contenues dans le dossier images/teams -->
+        @foreach (var imageFile in Directory.EnumerateFiles("wwwroot/images/teams"))
+        {
+            <div class="col-md-4">
+                <img src="@imageFile" class="img-fluid" alt="Équipe">
+            </div>
+        }
+    </div>
+</div>
+<div class="container">
+    <h2 class="text-center">Nos partenaires</h2>
+    <div class="row">
+        <!-- Affiche les images contenues dans le dossier images/client -->
+        @foreach (var imageFile in Directory.EnumerateFiles("wwwroot/images/client"))
+        {
+            <div class="col-md-4">
+                <img src="@imageFile" class="img-fluid" alt="Partenaire">
+            </div>
+        }
+    </div>
+</div>

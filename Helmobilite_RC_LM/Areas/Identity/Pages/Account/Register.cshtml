@@ -1,0 +1,229 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<!-- Modal window for role selection -->
+<div class="modal" id="roleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Select a Role</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="roleClient" value="client">
+                    <label class="form-check-label" for="roleClient">
+                        Client
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="roleDispatcher" value="dispatcher">
+                    <label class="form-check-label" for="roleDispatcher">
+                        Dispatcher
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="roleChauffeur" value="chauffeur">
+                    <label class="form-check-label" for="roleChauffeur">
+                        Chauffeur
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="selectRoleBtn">Select</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h2>Create a new account.</h2>
+            <hr/>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-floating">
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true"/>
+                <label asp-for="Input.Email"></label>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true"/>
+                <label asp-for="Input.Password"></label>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true"/>
+                <label asp-for="Input.ConfirmPassword"></label>
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <!-- Client fields -->
+            <div id="clientFields" style="display: none;">
+                <div class="form-floating">
+                    <input asp-for="Input.ClientNomEntreprise" class="form-control"/>
+                    <label asp-for="Input.ClientNomEntreprise"></label>
+                    <span asp-validation-for="Input.ClientNomEntreprise" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.ClientAdresse.Numero" class="form-control"/>
+                    <label asp-for="Input.ClientAdresse.Numero"></label>
+                    <span asp-validation-for="Input.ClientAdresse.Numero" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.ClientAdresse.Rue" class="form-control"/>
+                    <label asp-for="Input.ClientAdresse.Rue"></label>
+                    <span asp-validation-for="Input.ClientAdresse.Rue" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.ClientAdresse.Ville" class="form-control"/>
+                    <label asp-for="Input.ClientAdresse.Ville"></label>
+                    <span asp-validation-for="Input.ClientAdresse.Ville" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.ClientAdresse.CodePostal" class="form-control"/>
+                    <label asp-for="Input.ClientAdresse.CodePostal"></label>
+                    <span asp-validation-for="Input.ClientAdresse.CodePostal" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.ClientAdresse.Pays" class="form-control"/>
+                    <label asp-for="Input.ClientAdresse.Pays"></label>
+                    <span asp-validation-for="Input.ClientAdresse.Pays" class="text-danger"></span>
+                </div>
+
+            </div>
+            <!-- Dispatcher fields -->
+            <div id="dispatcherFields" style="display: none;">
+                <div class="form-floating">
+                    <input asp-for="Input.UtilisateurHelmo.Nom" class="form-control"/>
+                    <label asp-for="Input.UtilisateurHelmo.Nom"></label>
+                    <span asp-validation-for="Input.UtilisateurHelmo.Nom" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.UtilisateurHelmo.Prenom" class="form-control"/>
+                    <label asp-for="Input.UtilisateurHelmo.Prenom"></label>
+                    <span asp-validation-for="Input.UtilisateurHelmo.Prenom" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.UtilisateurHelmo.Matricule" class="form-control"/>
+                    <label asp-for="Input.UtilisateurHelmo.Matricule"></label>
+                    <span asp-validation-for="Input.UtilisateurHelmo.Matricule" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <select asp-for="Input.DispatcherNiveauEtude" class="form-control">
+                        <option value="CESS">CESS</option>
+                        <option value="Bachelier">Bachelier</option>
+                        <option value="Master">Master</option>
+                    </select>
+                    <label asp-for="Input.DispatcherNiveauEtude"></label>
+                    <span asp-validation-for="Input.DispatcherNiveauEtude" class="text-danger"></span>
+                </div>
+
+            </div>
+            <!-- Chauffeur fields -->
+            <div id="chauffeurFields" style="display: none;">
+                <div class="form-floating">
+                    <input asp-for="Input.UtilisateurHelmo.Nom" class="form-control"/>
+                    <label asp-for="Input.UtilisateurHelmo.Nom"></label>
+                    <span asp-validation-for="Input.UtilisateurHelmo.Nom" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.UtilisateurHelmo.Prenom" class="form-control"/>
+                    <label asp-for="Input.UtilisateurHelmo.Prenom"></label>
+                    <span asp-validation-for="Input.UtilisateurHelmo.Prenom" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.UtilisateurHelmo.Matricule" class="form-control"/>
+                    <label asp-for="Input.UtilisateurHelmo.Matricule"></label>
+                    <span asp-validation-for="Input.UtilisateurHelmo.Matricule" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <select asp-for="Input.ChauffeurPermis" asp-items="Model.PermisSelectList" class="form-control">
+                        <option value="C">C</option>
+                        <option value="CE">CE</option>
+                        <option value="B">B</option>
+                    </select>
+                    <label asp-for="Input.ChauffeurPermis"></label>
+                    <span asp-validation-for="Input.ChauffeurPermis" class="text-danger"></span>
+                </div>
+                <input asp-for="Input.Role" id="roleRegister" style="display: none"/>
+            </div>
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+        </form>
+    </div>
+    <div class="col-md-6 col-md-offset-2">
+        <section>
+            <h3>Use another service to register.</h3>
+            <hr/>
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See this
+                            <a href="https://go.microsoft.com/fwlink/?LinkID=532715">
+                                article
+                                about setting up this ASP.NET application to support logging in via external services
+                            </a>.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in Model.ExternalLogins!)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+
+    <script>
+        // Open the role selection modal when the page loads
+        $(document).ready(function () {
+            $('#roleModal').modal('show');
+        });
+
+        // Handle role selection and show/hide corresponding form fields
+        $('#selectRoleBtn').click(function () {
+            var selectedRole = $('input[name="role"]:checked').val();
+
+            // Hide all role fields
+            $('#clientFields').hide();
+            $('#dispatcherFields').hide();
+            $('#chauffeurFields').hide();
+
+            // Show fields for the selected role
+            if (selectedRole === 'client') {
+                $('#clientFields').show();
+                $('#roleRegister').val('client');
+            } else if (selectedRole === 'dispatcher') {
+                $('#dispatcherFields').show();
+                $('#roleRegister').val('dispatcher');
+            } else if (selectedRole === 'chauffeur') {
+                $('#chauffeurFields').show();
+                $('#roleRegister').val('chauffeur');
+            }
+
+            // Close the role selection modal
+            $('#roleModal').modal('hide');
+        });
+    </script>
+}

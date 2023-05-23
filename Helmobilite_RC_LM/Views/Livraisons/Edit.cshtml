@@ -1,0 +1,61 @@
+@model HelmoBilite_RC_LM.Models.Livraison
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Livraison</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="LieuChargementId" class="control-label"></label>
+                <select asp-for="LieuChargementId" class="form-control" asp-items="ViewBag.LieuChargementId"></select>
+                <span asp-validation-for="LieuChargementId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LieuDechargementId" class="control-label"></label>
+                <select asp-for="LieuDechargementId" class="form-control" asp-items="ViewBag.LieuDechargementId"></select>
+                <span asp-validation-for="LieuDechargementId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contenu" class="control-label"></label>
+                <input asp-for="Contenu" class="form-control" />
+                <span asp-validation-for="Contenu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateHeureChargement" class="control-label"></label>
+                <input asp-for="DateHeureChargement" class="form-control" />
+                <span asp-validation-for="DateHeureChargement" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateHeureDechargement" class="control-label"></label>
+                <input asp-for="DateHeureDechargement" class="form-control" />
+                <span asp-validation-for="DateHeureDechargement" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Statut" class="control-label"></label>
+                <input asp-for="Statut" class="form-control" />
+                <span asp-validation-for="Statut" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClientId" class="control-label"></label>
+                <select asp-for="ClientId" class="form-control" asp-items="ViewBag.ClientId"></select>
+                <span asp-validation-for="ClientId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

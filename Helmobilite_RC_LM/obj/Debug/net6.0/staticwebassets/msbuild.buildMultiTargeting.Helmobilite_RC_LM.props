@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Helmobilite_RC_LM.props" />
+</Project>

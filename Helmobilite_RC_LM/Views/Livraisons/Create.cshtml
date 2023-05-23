@@ -1,0 +1,93 @@
+@model Helmobilite_RC_LM.ViewsModels.LivraisonsViewsModels
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Livraison</h4>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LieuChargement.Numero" class="control-label"></label>
+                <input asp-for="LieuChargement.Numero" class="form-control"/>
+                <span asp-validation-for="LieuChargement.Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LieuChargement.Rue" class="control-label"></label>
+                <input asp-for="LieuChargement.Rue" class="form-control"/>
+                <span asp-validation-for="LieuChargement.Rue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LieuChargement.CodePostal" class="control-label"></label>
+                <input asp-for="LieuChargement.CodePostal" class="form-control"/>
+                <span asp-validation-for="LieuChargement.CodePostal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LieuChargement.Ville" class="control-label"></label>
+                <input asp-for="LieuChargement.Ville" class="form-control"/>
+                <span asp-validation-for="LieuChargement.Ville" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LieuChargement.Pays" class="control-label"></label>
+                <input asp-for="LieuChargement.Pays" class="form-control"/>
+                <span asp-validation-for="LieuChargement.Pays" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LieuDechargement.Numero" class="control-label"></label>
+                <input asp-for="LieuDechargement.Numero" class="form-control"/>
+                <span asp-validation-for="LieuDechargement.Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LieuDechargement.Rue" class="control-label"></label>
+                <input asp-for="LieuDechargement.Rue" class="form-control"/>
+                <span asp-validation-for="LieuDechargement.Rue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LieuDechargement.CodePostal" class="control-label"></label>
+                <input asp-for="LieuDechargement.CodePostal" class="form-control"/>
+                <span asp-validation-for="LieuDechargement.CodePostal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LieuDechargement.Ville" class="control-label"></label>
+                <input asp-for="LieuDechargement.Ville" class="form-control"/>
+                <span asp-validation-for="LieuDechargement.Ville" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LieuDechargement.Pays" class="control-label"></label>
+                <input asp-for="LieuDechargement.Pays" class="form-control"/>
+                <span asp-validation-for="LieuDechargement.Pays" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateChargement" class="control-label"></label>
+                <input asp-for="DateChargement" class="form-control"/>
+                <span asp-validation-for="DateChargement" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateDechargement" class="control-label"></label>
+                <input asp-for="DateDechargement" class="form-control"/>
+                <span asp-validation-for="DateDechargement" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contenu" class="control-label"></label>
+                <input asp-for="Contenu" class="form-control"/>
+                <span asp-validation-for="Contenu" class="text-danger"></span>
+            </div>
+            
+            
+
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
