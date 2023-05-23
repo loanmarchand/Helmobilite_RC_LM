@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Romai\\Desktop\\2022-2023\\B2\\Q2\\DevWeb\\pf\\Helmobilite_RC_LM\\Helmobilite_RC_LM.csproj": {}
+    "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\Helmobilite_RC_LM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Romai\\Desktop\\2022-2023\\B2\\Q2\\DevWeb\\pf\\Helmobilite_RC_LM\\Helmobilite_RC_LM.csproj": {
+    "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\Helmobilite_RC_LM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Romai\\Desktop\\2022-2023\\B2\\Q2\\DevWeb\\pf\\Helmobilite_RC_LM\\Helmobilite_RC_LM.csproj",
+        "projectUniqueName": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\Helmobilite_RC_LM.csproj",
         "projectName": "Helmobilite_RC_LM",
-        "projectPath": "C:\\Users\\Romai\\Desktop\\2022-2023\\B2\\Q2\\DevWeb\\pf\\Helmobilite_RC_LM\\Helmobilite_RC_LM.csproj",
-        "packagesPath": "C:\\Users\\Romai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Romai\\Desktop\\2022-2023\\B2\\Q2\\DevWeb\\pf\\Helmobilite_RC_LM\\obj\\",
+        "projectPath": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\Helmobilite_RC_LM.csproj",
+        "packagesPath": "C:\\Users\\lolot\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Romai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lolot\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

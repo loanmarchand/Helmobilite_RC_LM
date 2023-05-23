@@ -21,6 +21,34 @@
       "PackagePath": "staticwebassets\\images\\camions\\highway-g4b6ede00d_1280.jpg"
     },
     {
+      "Id": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\wwwroot\\images\\camions\\istockphoto-859916128-612x612.jpg",
+      "PackagePath": "staticwebassets\\images\\camions\\istockphoto-859916128-612x612.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\wwwroot\\images\\client\\fauxgo-faux-logo-film-compagnie-02.jpg",
+      "PackagePath": "staticwebassets\\images\\client\\fauxgo-faux-logo-film-compagnie-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\wwwroot\\images\\client\\fauxgo-faux-logo-film-compagnie-03.jpg",
+      "PackagePath": "staticwebassets\\images\\client\\fauxgo-faux-logo-film-compagnie-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\wwwroot\\images\\client\\fauxgo-faux-logo-film-compagnie-09.jpg",
+      "PackagePath": "staticwebassets\\images\\client\\fauxgo-faux-logo-film-compagnie-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\wwwroot\\images\\teams\\20357255-mecanicien-camionneur-icone-dessin-anime-vecteur-chauffeur-un-camion-vectoriel.jpg",
+      "PackagePath": "staticwebassets\\images\\teams\\20357255-mecanicien-camionneur-icone-dessin-anime-vecteur-chauffeur-un-camion-vectoriel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\wwwroot\\images\\teams\\téléchargement (1).jpg",
+      "PackagePath": "staticwebassets\\images\\teams\\téléchargement (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\wwwroot\\images\\teams\\téléchargement.jpg",
+      "PackagePath": "staticwebassets\\images\\teams\\téléchargement.jpg"
+    },
+    {
       "Id": "C:\\Users\\lolot\\RiderProjects\\Helmobilite_RC_LM\\Helmobilite_RC_LM\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

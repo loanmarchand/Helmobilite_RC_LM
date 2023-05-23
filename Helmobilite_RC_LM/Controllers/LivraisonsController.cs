@@ -23,7 +23,8 @@ namespace Helmobilite_RC_LM.Controllers
         // GET: Livraisons
         public async Task<IActionResult> Index()
         {
-            var helmoBiliteRcLmContext = _context.Livraisons.Include(l => l.Client).Include(l => l.LieuChargement).Include(l => l.LieuDechargement);
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var helmoBiliteRcLmContext = _context.Livraisons.Where(l => l.ClientId ==userId).Include(l => l.Client).Include(l => l.LieuChargement).Include(l => l.LieuDechargement);
             return View(await helmoBiliteRcLmContext.ToListAsync());
         }
 
@@ -114,9 +115,14 @@ namespace Helmobilite_RC_LM.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClientId"] = new SelectList(_context.Clients, "Id", "Id", livraison.ClientId);
-            ViewData["LieuChargementId"] = new SelectList(_context.Adresses, "Id", "Pays", livraison.LieuChargementId);
-            ViewData["LieuDechargementId"] = new SelectList(_context.Adresses, "Id", "Pays", livraison.LieuDechargementId);
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            ViewData["ClientId"] = userId;
+            int lieuChargementId = livraison.LieuChargementId;
+            Adresse lieuChargement = await _context.Adresses.FindAsync(lieuChargementId);
+            ViewData["LieuChargement"] = lieuChargement;
+            int lieuDechargementId = livraison.LieuDechargementId;
+            Adresse lieuDechargement = await _context.Adresses.FindAsync(lieuDechargementId);
+            ViewData["LieuDechargementId"] = lieuDechargement;
             return View(livraison);
         }
 
@@ -125,17 +131,22 @@ namespace Helmobilite_RC_LM.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,LieuChargementId,LieuDechargementId,Contenu,DateHeureChargement,DateHeureDechargement,Statut,ClientId")] Livraison livraison)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,LieuChargementId,LieuChargement,LieuDechargementId,LieuDechargement,Contenu,DateHeureChargement,DateHeureDechargement,Statut,ClientId,Client")] Livraison livraison)
         {
             if (id != livraison.Id)
             {
                 return NotFound();
             }
-
+            livraison.LieuChargement.Id = livraison.LieuChargementId;
+            livraison.LieuDechargement.Id = livraison.LieuDechargementId;
+            ModelState.Remove("Client");
             if (ModelState.IsValid)
             {
                 try
                 {
+                    //Update les lieux de chargement et de déchargement en base de données
+                    _context.Adresses.Update(livraison.LieuChargement);
+                    _context.Adresses.Update(livraison.LieuDechargement);
                     _context.Update(livraison);
                     await _context.SaveChangesAsync();
                 }

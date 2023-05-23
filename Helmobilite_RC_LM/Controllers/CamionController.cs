@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace HelmoBilite_RC_LM.Controllers
 {
-    [Authorize(Roles = "Utilisateur")]
+    [Authorize(Roles = "Client")]
     public class CamionController : Controller
     {
         private readonly HelmoBiliteRcLmContext _context;

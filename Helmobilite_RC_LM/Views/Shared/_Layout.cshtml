@@ -22,14 +22,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+                        @if(User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Camion" asp-action="Index">Camions</a>
+                            </li>
+                            
+                        }
+                        
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Camion" asp-action="Index">Camions</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Livraisons" asp-route-id="" asp-action="Index">Livraisons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Livraisons" asp-action="Index">Livraisons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="OrdreLivraisons" asp-action="Index">Livraisons</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="OrdreLivraison" asp-action="Index">Ordre de livraisons</a>
                         </li>
                         
                         
