@@ -33,13 +33,15 @@ namespace Helmobilite_RC_LM.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<Utilisateur> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly HelmoBiliteRcLmContext _context;
 
         public RegisterModel(
             UserManager<Utilisateur> userManager,
             IUserStore<Utilisateur> userStore,
             SignInManager<Utilisateur> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            HelmoBiliteRcLmContext context)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -47,6 +49,7 @@ namespace Helmobilite_RC_LM.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _context = context;
         }
 
         /// <summary>
@@ -128,13 +131,25 @@ namespace Helmobilite_RC_LM.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (CheckInput())
             {
-                var user = CreateUser();
-
+                
+                //Ajouter l'adresse dans la base de données
+                var adresse = new Adresse
+                {
+                    Numero = Input.ClientAdresse.Numero,
+                    Rue = Input.ClientAdresse.Rue,
+                    CodePostal = Input.ClientAdresse.CodePostal,
+                    Ville = Input.ClientAdresse.Ville,
+                    Pays = Input.ClientAdresse.Pays
+                };
+                _context.Adresses.Add(adresse);
+                await _context.SaveChangesAsync();
+                var idAdresse = adresse.Id;
+                var user = CreateUser(idAdresse);
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 await _userManager.AddToRoleAsync(user, Input.Role);
-
+                //Récuperer l'id de l'adresse
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
@@ -207,7 +222,7 @@ namespace Helmobilite_RC_LM.Areas.Identity.Pages.Account
             return true;
         }
 
-        private Utilisateur CreateUser()
+        private Utilisateur CreateUser(int idAdresse)
         {
             try
             {
@@ -218,6 +233,8 @@ namespace Helmobilite_RC_LM.Areas.Identity.Pages.Account
                         var user = Activator.CreateInstance<Client>();
                         user.CompanyName = Input.ClientNomEntreprise;
                         user.CompagnyAdress = Input.ClientAdresse;
+                        user.Picture = " ";
+                        user.IdAdresse = idAdresse;
                         return user;
                     }
                     case "dispatcher":
@@ -227,6 +244,7 @@ namespace Helmobilite_RC_LM.Areas.Identity.Pages.Account
                         user.Prenom = Input.UtilisateurHelmo.Prenom;
                         user.Matricule = Input.UtilisateurHelmo.Matricule;
                         user.NiveauEtude = Input.DispatcherNiveauEtude;
+                        user.Picture = " ";
                         return user;
                     }
                     case "chauffeur":
@@ -237,6 +255,7 @@ namespace Helmobilite_RC_LM.Areas.Identity.Pages.Account
                         user.Prenom = Input.UtilisateurHelmo.Prenom;
                         user.Matricule = Input.UtilisateurHelmo.Matricule;
                         user.Permis = Input.ChauffeurPermis;
+                        user.Picture = " ";
                         return user;
                     }
                     default:

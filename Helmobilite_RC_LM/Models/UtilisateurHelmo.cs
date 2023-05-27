@@ -11,4 +11,6 @@ public class UtilisateurHelmo : Utilisateur
     public string Prenom { get; set; }
     [Required]
     public string Matricule { get; set; }
+    
+    public DateTime? DateDeNaissance { get; set; }
 }

@@ -13,5 +13,4 @@ public class Client : Utilisateur
     
     public Adresse CompagnyAdress { get; set; }
     public ICollection<Livraison>? Livraisons { get; set; }
-
 }

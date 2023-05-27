@@ -210,6 +210,9 @@ namespace Helmobilite_RC_LM.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Picture")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -374,6 +377,10 @@ namespace Helmobilite_RC_LM.Migrations
                 {
                     b.HasBaseType("HelmoBilite_RC_LM.Models.Utilisateur");
 
+                    b.Property<DateTime?>("DateDeNaissance")
+                        .ValueGeneratedOnUpdateSometimes()
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Matricule")
                         .IsRequired()
                         .ValueGeneratedOnUpdateSometimes()
@@ -418,6 +425,10 @@ namespace Helmobilite_RC_LM.Migrations
             modelBuilder.Entity("HelmoBilite_RC_LM.Models.Dispatcher", b =>
                 {
                     b.HasBaseType("HelmoBilite_RC_LM.Models.Utilisateur");
+
+                    b.Property<DateTime?>("DateDeNaissance")
+                        .ValueGeneratedOnUpdateSometimes()
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Matricule")
                         .IsRequired()

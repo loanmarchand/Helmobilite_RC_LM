@@ -6,25 +6,125 @@
 }
 
 <h3>@ViewData["Title"]</h3>
-<partial name="_StatusMessage" for="StatusMessage" />
+<partial name="_StatusMessage" for="StatusMessage"/>
 <div class="row">
     <div class="col-md-6">
-        <form id="profile-form" method="post">
+        <form id="profile-form" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-floating">
-                <input asp-for="Username" class="form-control" disabled />
+                <input asp-for="Username" class="form-control" disabled/>
                 <label asp-for="Username" class="form-label"></label>
             </div>
-            <div class="form-floating">
-                <input asp-for="Input.PhoneNumber" class="form-control" />
-                <label asp-for="Input.PhoneNumber" class="form-label"></label>
-                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+            <!-- Client fields -->
+            <div id="clientFields" style="display: block;">
+                <div class="form-floating">
+                    <input asp-for="Input.client.CompanyName" class="form-control"/>
+                    <label asp-for="Input.client.CompanyName"></label>
+                    <span asp-validation-for="Input.client.CompanyName" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.client.CompagnyAdress.Numero" class="form-control"/>
+                    <label asp-for="Input.client.CompagnyAdress.Numero"></label>
+                    <span asp-validation-for="Input.client.CompagnyAdress.Numero" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.client.CompagnyAdress.Rue" class="form-control"/>
+                    <label asp-for="Input.client.CompagnyAdress.Rue"></label>
+                    <span asp-validation-for="Input.client.CompagnyAdress.Rue" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.client.CompagnyAdress.Ville" class="form-control"/>
+                    <label asp-for="Input.client.CompagnyAdress.Ville"></label>
+                    <span asp-validation-for="Input.client.CompagnyAdress.Ville" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.client.CompagnyAdress.CodePostal" class="form-control"/>
+                    <label asp-for="Input.client.CompagnyAdress.CodePostal"></label>
+                    <span asp-validation-for="Input.client.CompagnyAdress.CodePostal" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.client.CompagnyAdress.Pays" class="form-control"/>
+                    <label asp-for="Input.client.CompagnyAdress.Pays"></label>
+                    <span asp-validation-for="Input.client.CompagnyAdress.Pays" class="text-danger"></span>
+                </div>
+
             </div>
+            <!-- Dispatcher fields -->
+            <div id="dispatcherFields" style="display: none;">
+                <div class="form-floating">
+                    <input asp-for="Input.dispatcher.Nom" class="form-control"/>
+                    <label asp-for="Input.dispatcher.Nom"></label>
+                    <span asp-validation-for="Input.dispatcher.Nom" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.dispatcher.Prenom" class="form-control"/>
+                    <label asp-for="Input.dispatcher.Prenom"></label>
+                    <span asp-validation-for="Input.dispatcher.Prenom" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.dispatcher.Matricule" class="form-control"/>
+                    <label asp-for="Input.dispatcher.Matricule"></label>
+                    <span asp-validation-for="Input.dispatcher.Matricule" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <select asp-for="Input.dispatcher.NiveauEtude" class="form-control">
+                        <option value="CESS">CESS</option>
+                        <option value="Bachelier">Bachelier</option>
+                        <option value="Master">Master</option>
+                    </select>
+                    <label asp-for="Input.dispatcher.NiveauEtude"></label>
+                    <span asp-validation-for="Input.dispatcher.NiveauEtude" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.dispatcher.DateDeNaissance" disabled/>
+                    <label asp-for="Input.dispatcher.DateDeNaissance"></label>
+                    <span asp-validation-for="Input.dispatcher.DateDeNaissance" class="text-danger"></span>
+                </div>
+                
+
+            </div>
+            <!-- Chauffeur fields -->
+            <div id="chauffeurFields" style="display: none;">
+                <div class="form-floating">
+                    <input asp-for="Input.driver.Nom" class="form-control"/>
+                    <label asp-for="Input.driver.Nom"></label>
+                    <span asp-validation-for="Input.driver.Nom" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.driver.Prenom" class="form-control"/>
+                    <label asp-for="Input.driver.Prenom"></label>
+                    <span asp-validation-for="Input.driver.Prenom" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.driver.Matricule" class="form-control"/>
+                    <label asp-for="Input.driver.Matricule"></label>
+                    <span asp-validation-for="Input.driver.Matricule" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.driver.Permis" disabled/>
+                    <label asp-for="Input.driver.Permis"></label>
+                    <span asp-validation-for="Input.driver.Permis" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.driver.DateDeNaissance" disabled/>
+                    <label asp-for="Input.driver.DateDeNaissance"></label>
+                    <span asp-validation-for="Input.driver.DateDeNaissance" class="text-danger"></span>
+                </div>
+                
+                
+            </div>
+            <div class="form-group">
+                <label asp-for="PhotoFile" class="control-label"></label>
+                <input asp-for="PhotoFile" class="form-control" type="file" />
+                <span asp-validation-for="PhotoFile" class="text-danger"></span>
+            </div>
+
+
+
             <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
         </form>
     </div>
 </div>
-
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial"/>
 }
